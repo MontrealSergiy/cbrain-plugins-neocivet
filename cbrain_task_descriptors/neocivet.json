@@ -1,7 +1,7 @@
 {
     "tool-version": "0.1",
     "name": "neocivet",
-    "author": "M. Liu, H. Kim, S. Jeon, R. Maheshwary. C. Lepage",
+    "author": "M. Liu, H. Kim",
     "descriptor-url": "https://github.com/big-data-lab-team/cbrain-plugins-eeg/blob/master/cbrain_task_descriptors/qeeg.json", 
     "command-line": "/opt/NEOCIVET_pipeline/init.sh;  mkdir -p [BASEDIR]; mkdir -p [TARGETDIR]; /opt/NEOCIVET_pipeline/Jobfile_NEOCIVET_pipeline.sh [PREFIX] [CASES] [SOURCEDIR] [BASEDIR] [TARGETDIR]",
     "inputs": [
