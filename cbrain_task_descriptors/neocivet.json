@@ -3,10 +3,8 @@
     "name": "neocivet",
     "author": "H.Kim, S. Jeon, R. Maheshwary. C.Lepage",
     "descriptor-url": "https://github.com/big-data-lab-team/cbrain-plugins-eeg/blob/master/cbrain_task_descriptors/qeeg.json", 
-    "command-line": "/opt/NEOCIVET_pipeline/init.sh;  mkdir -p [BASEDIR]; mkdir -p [TARGETDIR]; /opt/NEOCIVET_pipeline/Jobfile_NEOCIVET_pipeline.sh [PREFIX] [CASES] [SOURCEDIR] [BASEDIR] [TARGETDIR]",
+    "command-line": "source /opt/NEOCIVET_pipeline/init.sh;  mkdir -p [BASEDIR]; mkdir -p [TARGETDIR]; source /opt/NEOCIVET_pipeline/Jobfile_NEOCIVET_pipeline.sh [PREFIX] [CASES] [SOURCEDIR] [BASEDIR] [TARGETDIR]",
     "inputs": [
-
-
         {
             "description": "Folder containing the subject T1 image files named \"PREFIX_CASE_t1.mnc\", where \"PREFIX\" is an arbitrary name (like the name of the study), and \"CASE\" is the ID of subject.",
             "value-key": "[SOURCEDIR]",
@@ -32,7 +30,7 @@
             "type": "File",
             "id": "cases",
             "value-key": "[CASES]",
-            "name": "Basename"
+            "name": "Subject list"
         }, 
         {
             "description": "A folder with preprocessing results and masks.",
@@ -64,7 +62,7 @@
         {
             "description": "A folder containing the results of pre-processing and masks.",
             "list": false, 
-            "id": "outup",
+            "id": "base",
             "optional": true,
             "path-template": "[BASEDIR]",
             "name": "Output folder"
@@ -72,7 +70,7 @@
         {
             "description": "A folder containing the surface.",
             "list": false,
-            "id": "surface",
+            "id": "target",
             "optional": false,
             "path-template": "[TARGETDIR]",
             "name": "Surface folder"
