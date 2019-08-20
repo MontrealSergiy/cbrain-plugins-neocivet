@@ -76,7 +76,7 @@
             "name": "Surface folder"
         }
     ], 
-    "description": "NEOCIVET, neonatal extension of Civet",
+    "description": "NEOCIVET, a neonatal extension of Civet",
     "tags": {
         "domain": [
             "neuroinformatics", 
