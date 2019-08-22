@@ -3,7 +3,7 @@
     "name": "neocivet",
     "author": "M. Liu, H. Kim",
     "descriptor-url": "https://github.com/MontrealSergiy/cbrain-plugins-neocivet/blob/master/cbrain_task_descriptors/neocivet.json", 
-    "command-line": "source /opt/NEOCIVET_pipeline/init.sh;  mkdir -p [BASEDIR] [TARGETDIR]; source /opt/NEOCIVET_pipeline/Jobfile_NEOCIVET_pipeline.sh [PREFIX] [CASES] [SOURCEDIR] $(readlink -m [BASEDIR]) $(readlink -m [TARGETDIR]) ",
+    "command-line": "source /opt/NEOCIVET_pipeline/neocivet_cbrain_run.sh [PREFIX] [CASES] [SOURCEDIR] [BASEDIR]) [TARGETDIR] ",
     "inputs": [
         {
             "description": "Folder containing the subject T1 image files named \"PREFIX_CASE_t1.mnc\", where \"PREFIX\" is an arbitrary name (like the name of the study), and \"CASE\" is the ID of subject.",
