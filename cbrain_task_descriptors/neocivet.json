@@ -34,7 +34,7 @@
         }, 
         {
             "description": "A folder with preprocessing results and masks.",
-            "default-value": "outcome",
+            "default-value": "output",
             "value-key": "[BASEDIR]",
             "optional": false, 
             "list": false, 
