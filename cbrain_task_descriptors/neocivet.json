@@ -83,5 +83,9 @@
             "mri",
             "neonatal"
         ]
+    },
+    "suggested-resources": {
+        "walltime-estimate": 5000,
+        "ram": 10
     }
 }
