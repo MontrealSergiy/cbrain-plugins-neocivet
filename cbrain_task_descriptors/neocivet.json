@@ -85,7 +85,7 @@
         ]
     },
     "suggested-resources": {
-        "walltime-estimate": 5000,
-        "ram": 10
+        "walltime-estimate": 259000,
+        "ram": 9
     }
 }
