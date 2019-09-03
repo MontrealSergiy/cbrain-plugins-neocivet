@@ -81,7 +81,8 @@
         "domain": [
             "neuroinformatics", 
             "mri",
-            "neonatal"
+            "neonatal",
+            "minc"
         ]
     },
     "suggested-resources": {
