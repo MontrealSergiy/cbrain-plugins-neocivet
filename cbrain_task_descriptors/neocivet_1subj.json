@@ -6,16 +6,16 @@
     "command-line": "source /opt/NEOCIVET_pipeline/neocivet_cbrain_1subj.sh [PREFIX] [CASE] [SOURCEDIR] [BASEDIR] [TARGETDIR] ",
     "inputs": [
         {
-            "description": "Folder containing the subject T1 image files named \"PREFIX_CASE_t1.mnc\", where \"PREFIX\" is an arbitrary name (like the name of the study), and \"CASE\" is the ID of subject.",
+            "description": "Folder containing the subject image file named \"PREFIX_CASE_t1.mnc\", where \"PREFIX\" is an arbitrary name (like the name of the study), and \"CASE\" is the ID of subject.",
             "value-key": "[SOURCEDIR]",
             "optional": false, 
             "list": false, 
             "type": "File", 
             "id": "input_folder", 
-            "name": "Input T1 image folder"
+            "name": "MRI image folder"
         },
         {
-            "description": "A study name, with which all the input files start.",
+            "description": "A study name, with which the input files start.",
             "value-key": "[PREFIX]",
             "optional": false,
             "list": false,
@@ -27,10 +27,10 @@
             "description": "A subjects id'.",
             "optional": false,
             "list": false, 
-            "type": "File",
+            "type": "String",
             "id": "case",
             "value-key": "[CASE]",
-            "name": "Subject list"
+            "name": "Subject id"
         }, 
         {
             "description": "A folder with preprocessing results and masks.",
