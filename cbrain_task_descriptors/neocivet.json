@@ -24,13 +24,13 @@
             "name": "The name of the study (prefix of T1 file names)"
         },
         {
-            "description": "A subjects id'.",
+            "description": "Subject ids.",
             "optional": false,
             "list": false, 
             "type": "File",
             "id": "case",
             "value-key": "[CASE]",
-            "name": "Subject list"
+            "name": "Subject list (ids)"
         }, 
         {
             "description": "A folder with preprocessing results and masks.",

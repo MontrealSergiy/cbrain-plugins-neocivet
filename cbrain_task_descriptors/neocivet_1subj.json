@@ -24,7 +24,7 @@
             "name": "The name of the study (prefix of T1 file names)"
         },
         {
-            "description": "A subjects id'.",
+            "description": "A subject's id.",
             "optional": false,
             "list": false, 
             "type": "String",
