@@ -1,6 +1,6 @@
 {
     "tool-version": "0.1",
-    "name": "neocivet1subj",
+    "name": "neocivet",
     "author": "M. Liu, H. Kim",
     "descriptor-url": "https://github.com/MontrealSergiy/cbrain-plugins-neocivet/blob/master/cbrain_task_descriptors/neocivet.json", 
     "command-line": "source /opt/NEOCIVET_pipeline/neocivet_cbrain_1subj.sh [PREFIX] [CASE] [SOURCEDIR] [BASEDIR] [TARGETDIR] ",
