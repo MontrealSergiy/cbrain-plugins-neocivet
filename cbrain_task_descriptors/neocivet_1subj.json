@@ -44,18 +44,16 @@
         }, 
         {
             "description": "A folder with output surface files.",
-            "default-value": "surface", 
-            "value-key": "[TARGETDIR][PREFIX][CASE]",
+            "default-value": "surface[TARGETDIR][PREFIX][CASE]",
+            "value-key": "[TARGETDIR]",
             "optional": false, 
-            "list": false, 
+            "list": false,
             "type": "String",
             "id": "targetdir",
             "name": "Surface folder"
         }
     ],
-    "container-image": {
-        "type": "singularity"
-    }, 
+
     "schema-version": "0.5", 
     "output-files": [
         {
