@@ -24,15 +24,6 @@
             "name": "The name of the study (prefix of T1 file names)"
         },
         {
-            "description": "Subject ids.",
-            "optional": false,
-            "list": false, 
-            "type": "File",
-            "id": "case",
-            "value-key": "[CASE]",
-            "name": "Subject list (ids)"
-        }, 
-        {
             "description": "A folder with preprocessing results and masks.",
             "default-value": "output[PREFIX][CASE]",
             "value-key": "[BASEDIR]",
@@ -45,7 +36,7 @@
         {
             "description": "A folder with output surface files.",
             "default-value": "surface", 
-            "value-key": "[TARGETDIR][PREFIX][CASE]",
+            "value-key": "[TARGETDIR]",
             "optional": false, 
             "list": false, 
             "type": "String",
@@ -60,7 +51,7 @@
             "list": false, 
             "id": "base",
             "optional": true,
-            "path-template": "[BASEDIR]",
+            "path-template": "[BASEDIR]_[PREFIX]_[CASE]",
             "name": "Output folder"
         },
         {
@@ -68,7 +59,7 @@
             "list": false,
             "id": "target",
             "optional": false,
-            "path-template": "[TARGETDIR]",
+            "path-template": "[TARGETDIR]_[PREFIX]_[CASE]",
             "name": "Surface folder"
         }
     ], 
