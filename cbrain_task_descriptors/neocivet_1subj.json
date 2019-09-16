@@ -6,12 +6,12 @@
     "command-line": "source /opt/NEOCIVET_pipeline/neocivet_cbrain_1subj.sh [SOURCE] [BASEDIR] [TARGETDIR] ",
     "inputs": [
         {
-            "description": "The subject image file named \"PREFIX_CASE_t1.mnc\", where \"PREFIX\" is an arbitrary name but usually the name of the study), and \"CASE\" is the ID of subject.",
+            "description": "The subject image MINC1 file named \"PREFIX_CASE_t1.mnc\", where \"PREFIX\" is an arbitrary name but usually the name of the study), and \"CASE\" is the ID of subject.",
             "value-key": "[SOURCE]",
             "optional": false, 
             "list": false, 
             "type": "File", 
-            "id": "input_folder", 
+            "id": "input_file", 
             "name": "MRI image folder"
         },
         {
