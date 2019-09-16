@@ -1,21 +1,22 @@
 {
     "tool-version": "0.1",
-    "name": "neocivet1subj",
+    "name": "neocivet_cvs",
     "author": "M. Liu, H. Kim",
     "descriptor-url": "https://github.com/MontrealSergiy/cbrain-plugins-neocivet/blob/master/cbrain_task_descriptors/neocivet.json", 
-    "command-line": "source /opt/NEOCIVET_pipeline/neocivet_cbrain_1subj.sh [PREFIX] [CASE] [SOURCEDIR] [BASEDIR] [TARGETDIR] ",
+    "command-line": "source /opt/NEOCIVET_pipeline/neocivet_cbrain_1subj.sh [PREFIX] [SOURCE] [BASEDIR] [TARGETDIR] ",
     "inputs": [
         {
-            "description": "Folder containing the subject image file named \"PREFIX_CASE_t1.mnc\", where \"PREFIX\" is an arbitrary name (like the name of the study), and \"CASE\" is the ID of subject.",
-            "value-key": "[SOURCEDIR]",
+            "description": "The subject image file named \"PREFIX_CASE_t1.mnc\", where \"PREFIX\" is an arbitrary name but usually the name of the study), and \"CASE\" is the ID of subject.",
+            "value-key": "[SOURCE]",
             "optional": false, 
             "list": false, 
             "type": "File", 
             "id": "input_folder", 
             "name": "MRI image folder"
         },
+
         {
-            "description": "A study name, with which the input files start.",
+            "description": "A study name, with which the input file(s) start.",
             "value-key": "[PREFIX]",
             "optional": false,
             "list": false,
@@ -24,17 +25,8 @@
             "name": "The name of the study (prefix of T1 file names)"
         },
         {
-            "description": "A subject's id.",
-            "optional": false,
-            "list": false, 
-            "type": "String",
-            "id": "case",
-            "value-key": "[CASE]",
-            "name": "Subject id"
-        }, 
-        {
-            "description": "A folder with preprocessing results and masks.",
-            "default-value": "output[PREFIX][CASE]",
+            "description": "A folder for volume data and masks.",
+            "default-value": "output[PREFIX]",
             "value-key": "[BASEDIR]",
             "optional": false, 
             "list": false, 
@@ -44,7 +36,7 @@
         }, 
         {
             "description": "A folder with output surface files.",
-            "default-value": "surface[TARGETDIR][PREFIX][CASE]",
+            "default-value": "surface[TARGETDIR][PREFIX]",
             "value-key": "[TARGETDIR]",
             "optional": false, 
             "list": false,
