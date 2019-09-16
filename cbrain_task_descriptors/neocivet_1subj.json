@@ -3,7 +3,7 @@
     "name": "neocivet_cvs",
     "author": "M. Liu, H. Kim",
     "descriptor-url": "https://github.com/MontrealSergiy/cbrain-plugins-neocivet/blob/master/cbrain_task_descriptors/neocivet.json", 
-    "command-line": "source /opt/NEOCIVET_pipeline/neocivet_cbrain_1subj.sh [PREFIX] [SOURCE] [BASEDIR] [TARGETDIR] ",
+    "command-line": "source /opt/NEOCIVET_pipeline/neocivet_cbrain_1subj.sh [SOURCE] [BASEDIR] [TARGETDIR] ",
     "inputs": [
         {
             "description": "The subject image file named \"PREFIX_CASE_t1.mnc\", where \"PREFIX\" is an arbitrary name but usually the name of the study), and \"CASE\" is the ID of subject.",
@@ -14,19 +14,9 @@
             "id": "input_folder", 
             "name": "MRI image folder"
         },
-
-        {
-            "description": "A study name, with which the input file(s) start.",
-            "value-key": "[PREFIX]",
-            "optional": false,
-            "list": false,
-            "type": "String",
-            "id": "prefix",
-            "name": "The name of the study (prefix of T1 file names)"
-        },
         {
             "description": "A folder for volume data and masks.",
-            "default-value": "output[PREFIX]",
+            "default-value": "output",
             "value-key": "[BASEDIR]",
             "optional": false, 
             "list": false, 
@@ -36,7 +26,7 @@
         }, 
         {
             "description": "A folder with output surface files.",
-            "default-value": "surface[TARGETDIR][PREFIX]",
+            "default-value": "surface",
             "value-key": "[TARGETDIR]",
             "optional": false, 
             "list": false,
@@ -75,7 +65,7 @@
         ]
     },
     "suggested-resources": {
-        "walltime-estimate": 258500,
+        "walltime-estimate": 100000,
         "ram": 9
     }
 }
