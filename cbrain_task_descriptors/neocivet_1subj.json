@@ -57,7 +57,7 @@
             "name": "Surface folder"
         }
     ], 
-    "description": "NEOCIVET, a neonatal extension of Civet. This version accepts a single MINC 1 file of a subject or a list of files created in CBRAIN",
+    "description": "NEOCIVET, a neonatal Civet. This version accepts a single MINC 1 file of a subject or a list of files created in CBRAIN",
     "tags": {
         "domain": [
             "neuroinformatics", 
