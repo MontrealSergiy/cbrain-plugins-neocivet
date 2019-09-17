@@ -44,7 +44,7 @@
             "id": "base",
             "optional": true,
             "path-template": "[BASEDIR][SOURCE]",
-            "path-template-stripped-extensions": [".mnc", ",mnc.gz", "minc", "minc.gz"],
+            "path-template-stripped-extensions": ["_t1.mnc", "_t1.mnc.gz", "_t1.minc", "_t1.minc.gz", ".mnc", ".mnc.gz", "minc", "minc.gz"],
             "name": "Output folder"
         },
         {
@@ -53,7 +53,7 @@
             "id": "target",
             "optional": false,
             "path-template": "[TARGETDIR][SOURCE]",
-            "path-template-stripped-extensions": [".mnc", ",mnc.gz", "minc", "minc.gz"],
+            "path-template-stripped-extensions": ["_t1.mnc", "_t1.mnc.gz", "_t1.minc", "_t1.minc.gz", ".mnc", ".mnc.gz", "minc", "minc.gz"],
             "name": "Surface folder"
         }
     ], 
