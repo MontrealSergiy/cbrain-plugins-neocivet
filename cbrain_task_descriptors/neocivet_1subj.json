@@ -1,6 +1,6 @@
 {
     "tool-version": "0.2",
-    "name": "neocivet_csv",
+    "name": "csv_neocivet",
     "author": "M. Liu, H. Kim",
     "descriptor-url": "https://github.com/MontrealSergiy/cbrain-plugins-neocivet/blob/master/cbrain_task_descriptors/neocivet.json", 
     "command-line": "source /opt/NEOCIVET_pipeline/neocivet_cbrain_1subj.sh [SOURCE] [BASEDIR] [TARGETDIR] ",
@@ -39,23 +39,25 @@
     "schema-version": "0.5", 
     "output-files": [
         {
-            "description": "A folder containing the results of pre-processing and masks.",
+            "description": "A folder prefix containing the results of pre-processing and masks. The perfix would be followed by study prefix and id",
             "list": false, 
             "id": "base",
             "optional": true,
-            "path-template": "[BASEDIR]",
+            "path-template": "[BASEDIR][SOURCE]",
+            "path-template-stripped-extensions": [".mnc", ",mnc.gz", "minc", "minc.gz"],
             "name": "Output folder"
         },
         {
-            "description": "A folder containing the surface.",
+            "description": "A folder containing the surface. The folder name would get added perfix would be followed by study prefix and id",
             "list": false,
             "id": "target",
             "optional": false,
-            "path-template": "[TARGETDIR]",
+            "path-template": "[TARGETDIR][SOURCE]",
+            "path-template-stripped-extensions": [".mnc", ",mnc.gz", "minc", "minc.gz"],
             "name": "Surface folder"
         }
     ], 
-    "description": "NEOCIVET, a neonatal extension of Civet. This version accepts a single subject or a list of subjects created in CBRAIN",
+    "description": "NEOCIVET, a neonatal extension of Civet. This version accepts a single MINC 1 file of a subject or a list of files created in CBRAIN",
     "tags": {
         "domain": [
             "neuroinformatics", 
