@@ -12,7 +12,7 @@
             "list": false, 
             "type": "File", 
             "id": "input_file", 
-            "name": "MRI image file (MINC 1)"
+            "name": "MRI data (MINC 1)"
         },
         {
             "description": "A folder for volume data and masks.",
