@@ -15,7 +15,7 @@
             "name": "MRI data (MINC 1)"
         },
         {
-            "description": "A folder for volume data and masks.",
+            "description": "A folder for volume data and masks. Folder name is augumented with study and subject ids",
             "default-value": "output",
             "value-key": "[BASEDIR]",
             "optional": false, 
@@ -25,7 +25,7 @@
             "name": "Pre-processing results"
         }, 
         {
-            "description": "A folder with output surface files.",
+            "description": "A folder with output surface files. Folder name is augumented with study and subject ids",
             "default-value": "surface",
             "value-key": "[TARGETDIR]",
             "optional": false, 
@@ -52,7 +52,7 @@
             "list": false,
             "id": "target",
             "optional": false,
-            "path-template": "[TARGETDIR][SOURCE]",
+            "path-template": "[TARGETDIR]_[SOURCE]",
             "path-template-stripped-extensions": ["_t1.mnc", "_t1.mnc.gz", "_t1.minc", "_t1.minc.gz", ".mnc", ".mnc.gz", "minc", "minc.gz"],
             "name": "Surface folder"
         }
