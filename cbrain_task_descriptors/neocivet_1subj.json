@@ -43,7 +43,7 @@
             "list": false, 
             "id": "base",
             "optional": true,
-            "path-template": "[BASEDIR][SOURCE]",
+            "path-template": "[BASEDIR]_[SOURCE]",
             "path-template-stripped-extensions": ["_t1.mnc", "_t1.mnc.gz", "_t1.minc", "_t1.minc.gz", ".mnc", ".mnc.gz", "minc", "minc.gz"],
             "name": "Output folder"
         },
